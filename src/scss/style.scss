@@ -6,5 +6,33 @@
   font-weight: 700;
 }
 
+.main-header {
+  background-color: $dark-color;
+  padding: 1rem 0;
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .nav-link {
+      margin-right: 1rem;
+      font-size: 1rem;
+      color: $white-color;
+
+      &:first-of-type {
+        font-size: 2rem;
+        margin-right: 2rem;
+      }
+    }
+
+    .social-icons {
+      .social-icon {
+        margin-left: 1rem;
+      }
+    }
+  }
+}
+
 @import 'utilities';
 @import 'responsive';

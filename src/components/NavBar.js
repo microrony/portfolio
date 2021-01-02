@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom'
+import { SocialIcon } from 'react-social-icons'
 
 const Navbar = () => {
   return (
@@ -18,6 +19,27 @@ const Navbar = () => {
             About Me!
           </NavLink>
         </nav>
+
+        <div className="social-icons">
+          <SocialIcon
+            className="social-icon"
+            url="https://twitter.com/microrony"
+            fgColor="#fff"
+            style={{ height: 30, width: 30 }}
+          />
+          <SocialIcon
+            className="social-icon"
+            url="https://github.com/microrony"
+            fgColor="#fff"
+            style={{ height: 30, width: 30 }}
+          />
+          <SocialIcon
+            className="social-icon"
+            url="https://www.linkedin.com/in/microrony/"
+            fgColor="#fff"
+            style={{ height: 30, width: 30 }}
+          />
+        </div>
       </div>
     </header>
   )
