@@ -1,14 +1,12 @@
 @import 'config';
 @import 'main';
 
-.cursive {
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-}
+// Navbar
 
 .main-header {
   background-color: $dark-color;
   padding: 1rem 0;
+  height: 15vh;
 
   .navbar {
     display: flex;
@@ -36,6 +34,25 @@
       }
     }
   }
+}
+
+// Home Component
+
+.home-img {
+  position: absolute;
+  height: 85vh;
+  width: 100vw;
+  z-index: -1;
+}
+
+.my-name {
+  z-index: 1;
+  color: $white-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  font-size: 80px;
 }
 
 @import 'utilities';
