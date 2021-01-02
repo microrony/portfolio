@@ -48,11 +48,9 @@
 .my-name {
   z-index: 1;
   color: $white-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
   font-size: 80px;
+  text-align: center;
+  padding-top: 150px;
 }
 
 @import 'utilities';
