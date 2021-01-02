@@ -24,6 +24,10 @@
         font-size: 2rem;
         margin-right: 2rem;
       }
+
+      &:hover {
+        color: $success-color;
+      }
     }
 
     .social-icons {

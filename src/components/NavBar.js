@@ -6,7 +6,12 @@ const Navbar = () => {
     <header className="main-header">
       <div className="navbar container">
         <nav>
-          <NavLink to="/" exact className="nav-link cursive">
+          <NavLink
+            to="/"
+            exact
+            activeClassName="active"
+            className="nav-link cursive"
+          >
             Mahabubur
           </NavLink>
           <NavLink to="/post" className="nav-link">
