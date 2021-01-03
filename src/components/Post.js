@@ -26,16 +26,16 @@ const Post = () => {
 
   return (
     <main>
-      <section>
-        <h1>Blog Posts Page</h1>
-        <h2>Welcome to my page of blog posts</h2>
-        <div>
+      <section className='blog-page'>
+        <h1 className='cursive'>Blog Posts Page</h1>
+        <h2 className='cursive'>Welcome to my page of blog posts</h2>
+        <div className='blog-posts container'>
           { postData && postData.map((post, index) => (
           <article>
             <Link to={"/post/" + post.slug.current} key={post.slug.current}>
-            <span key={index}>
+            <span className='posts-img-title' key={index}>
               <img src={post.mainImage.asset.url} alt={post.mainImage.alt}/>
-              <span>
+              <span className='posts-title'>
                 <h3>{post.title}</h3>
               </span>
             </span>
